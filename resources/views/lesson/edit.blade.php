@@ -12,17 +12,6 @@
             <input type="text" class="form-control" id="name" name="name" value="{{$lesson->name}}">
         </div>
         <div class="form-group">
-            <label for="name">Course</label>
-            <select  class="form-control" id="course_id" name="course_id" >
-                @foreach ($courses as $course)
-                <option value="{{$course->id}}"  @if($course->id == $lesson->course_id) selected @endif >
-                    {{$course->name}}
-                </option>
-                @endforeach
-               
-            </select>
-        </div>
-        <div class="form-group">
             <label for="name">Price</label>
             <input type="text" class="form-control" id="price" name="price"value="{{$lesson->price}}">
         </div>
